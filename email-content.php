@@ -263,38 +263,7 @@ function email_content($product,$pod_size,$pod_image,$pod_short_info,$currency,$
             <tr>
                 <td colspan="2" style=" padding: 0;" height="40">&nbsp;</td>
             </tr>
-            <!-- <tr>
-                <td colspan="2" style=" padding: 0;">
-                    <table width="100%" cellspacing="0" cellpadding="5" border="0">
-                        <tbody>
-                            <tr>
-                                <td colspan="3">
-                                    <h2
-                                        style="margin-bottom:0px;font-family:Arial,Verdana,sans-serif;font-size:36px;font-weight:bold;text-align:center;color:#000">
-                                        How it Works</h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" height="40">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td style="border-right:1px solid #ccc;text-align:center">
-                                    <img src="https://ocpremiumthemes.com/3dloader/GMS-Move/assets/Images/collact.png"
-                                        alt="howitworks_01" style="max-width:100%" class="CToWUd" data-bit="iit">
-                                </td>
-                                <td style="border-right:1px solid #ccc;text-align:center">
-                                    <img src="https://ocpremiumthemes.com/3dloader/GMS-Move/assets/Images/storage.png"
-                                        alt="howitworks_01" style="max-width:100%" class="CToWUd" data-bit="iit">
-                                </td>
-                                <td style="text-align:center">
-                                    <img src="https://ocpremiumthemes.com/3dloader/GMS-Move/assets/Images/return.png"
-                                        alt="howitworks_01" style="max-width:100%" class="CToWUd" data-bit="iit">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr> -->
+   
             <tr>
                 <td style="padding: 0;" colspan="2" height="30">&nbsp;</td>
             </tr>
