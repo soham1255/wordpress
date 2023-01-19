@@ -41,15 +41,6 @@
                 $regular_price = ($distance >= $how_many_miles_set_for_distance_calculation) ? ($price_for_product * $pod_no) + $new_mile_price : $price_for_product * $pod_no;
                 $after_three_month = ($distance >= $how_many_miles_set_for_distance_calculation) ? ($after_3_month_price * $pod_no) + $new_mile_price : $after_3_month_price * $pod_no;
 
-                // if($distance >= $how_many_miles_set_for_distance_calculation){
-                   
-                    
-                //     $regular_price     = ($price_for_product * $pod_no) + $new_mile_price;
-                //     $after_three_month = ($after_3_month_price * $pod_no) + $new_mile_price;
-                // }else{
-                //     $regular_price     = $price_for_product * $pod_no;
-                //     $after_three_month = $after_3_month_price * $pod_no;
-                // }
                
                 product_content($i,$product,$pod_size,$pod_room,$pod_image,$vid,$pod_short_info,$postcode,$regular_price,$after_three_month,$distance);
               
@@ -81,9 +72,7 @@ function product_content($i,$product,$pod_size,$pod_room,$pod_image,$vid,$pod_sh
                 <span><?php echo $pod_room; ?></span>
                 <div class="package-image"> 
                     <img src="<?php echo $pod_image['url'];?>" alt="package">
-                        <!-- <a class="popup-youtube" href="https://www.youtube.com/watch?v=<?php echo $vid;?>"> 
-                            <img src="<?php echo site_url()?>/wp-content/uploads/2022/12/video_icon.png" alt="video_icon">
-                        </a> -->
+                       
                 </div>
                 <div class="gs__price">
                 <!-- <h3 class="strikethrough"><?php echo get_woocommerce_currency_symbol(); ?><?php echo $regular_price; ?></h3> -->
