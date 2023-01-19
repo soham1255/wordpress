@@ -105,8 +105,6 @@ function postcode_ajax(){
     $result = array(); 
     $start_row = 5; //define start row
     $i = 1; //define row count flag
-   // $file = fopen(get_stylesheet_directory(). "/Aylesbury.csv", "r");
-   // $fcsv   = file(get_stylesheet_directory(). '/Aylesbury.csv');
     $client = $postcode_input;
     $tkey='';
     $file_name='';
@@ -118,8 +116,7 @@ function postcode_ajax(){
             $reader = fopen(get_stylesheet_directory(). '/csv/'.$file1, 'r');
             $reader2 = file(get_stylesheet_directory(). '/csv/'.$file1);
 
-            //echo '<pre>'; print_r($reader);
-            //die();
+           
 
             foreach ($reader2 as $key => $value) {
                 $temp = explode(',', $value);
@@ -146,29 +143,17 @@ function postcode_ajax(){
                     $baselong = $row[2];
                     $lat = $row[4];
                     $long = $row[5];
-                    
-                    //do your stuff
-                    //  echo $basep;
-                    //  echo '<br>';
-                    //  echo $lat;
-                    //  echo '<br>';
-                    //  echo $long;
+               
                 }
                 $i++;
             }
         }
 
-        // $baselat = 51.821130;
-        // $baselong = -0.840170;
-
       
 
-        // echo 'add_latlng: '.$lat.'  '.$long.'<br/>>';
-        // echo 'base_latlng: '.$baselat.'  '.$baselong.'<br/>>';
         $distance = distance($baselat, $baselong, $lat, $long, "M");
-        // echo 'Distasnce:'.$distance;
-        // die();
-        // close file
+       
+      
         fclose($reader);
 
       
