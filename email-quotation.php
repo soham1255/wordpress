@@ -73,11 +73,11 @@ function email_quote_ajax(){
         $variation_id = $cart_item['variation_id'];
         $quantity = $cart_item['quantity'];
         $price = WC()->cart->get_product_price( $product );
-        //$price = WC()->cart->$c_price;
+     
         $subtotal = WC()->cart->get_product_subtotal( $product, $cart_item['quantity'] );
         $total = WC()->cart->get_total();
         $link = $product->get_permalink( $cart_item );
-        // Anything related to $product, check $product tutorial
+      
         $attributes = $product->get_attributes();
         $whatever_attribute = $product->get_attribute( 'whatever' );
         $whatever_attribute_tax = $product->get_attribute( 'pa_whatever' );
